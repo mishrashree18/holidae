@@ -1,8 +1,10 @@
-import Image from "next/image"
+import Image from "next/image";
+import Link from 'next/link';
 
 
 function LargeCard({ img, title, description, buttonText }) {
     return (
+        <Link href="/nearyou">
         <section className="relative py-16 cursor-pointer">
         <div className="relative h-96 min-w-[300px]">
             <Image src={img} layout="fill" objectFit="cover" className="rounded-2xl" />
@@ -17,6 +19,7 @@ function LargeCard({ img, title, description, buttonText }) {
         </button>
         </div>
         </section>
+        </Link>
     )
 }
 

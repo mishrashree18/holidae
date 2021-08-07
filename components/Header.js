@@ -17,7 +17,10 @@ function Header() {
     const handleSelect = (ranges) => {
         setStartDate(ranges.selection.startDate);
         setEndDate(ranges.selection.endDate);
-    }
+    };
+    const resetInput = () => {
+        setSearchInput('');
+    };
 
     return (
         <header className="sticky top-0 z-50 grid grid-cols-3 bg-white shadow-md py-5 px-5 md:px-10">
@@ -30,7 +33,7 @@ function Header() {
                 <SearchIcon className="hidden md:inline-flex h-8 bg-gray-600 text-white rounded-full p-2 cursor-pointer md:mx-2"/>
             </div>
             <div className="flex items-center justify-end space-x-4 text-gray-600">
-            <p className="hidden md:inline">Become a host</p>
+            <p className="cursor-pointer hidden md:inline">Become a host</p>
             <GlobeAltIcon className="h-6 cursor-pointer"/>
             <div className="flex items-center space-x-2 border-2 p-2 rounded-full">
                 <MenuIcon className="h-6 cursor-pointer" />
@@ -53,6 +56,13 @@ function Header() {
                         type="number"
                         min={1}
                         />
+                    </div>
+                    <div className="flex">
+                        <button onClick={resetInput} className="flex-grow text-gray-600">Cancel
+                            </button>
+                            <button className="flex-grow text-gray-900">Search
+
+                            </button>
                     </div>
 
                 </div>

@@ -7,6 +7,7 @@ import { LibraryIcon } from '@heroicons/react/solid';
 import LargeCard from '../components/LargeCard';
 import Footer from '../components/Footer';
 
+
 export default function Home({ exploreData, cardsData }) {
   return (
     <div className="">
