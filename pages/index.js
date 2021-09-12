@@ -12,7 +12,7 @@ export default function Home({ exploreData, cardsData }) {
   return (
     <div className="">
       <Head>
-        <title>Holidae</title>
+        <title>Paradise</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
@@ -20,7 +20,7 @@ export default function Home({ exploreData, cardsData }) {
      <Banner />
      <main className="max-w-7xl mx-auto px-8 sm:px-16">
        <section  className="pt-6">
-         <h2 className="text-4xl font-semibold pb-5">
+         <h2 className="text-2xl font-semibold pb-5 text-primary">
            Explore Nearby
          </h2>
          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"> 
@@ -32,7 +32,7 @@ export default function Home({ exploreData, cardsData }) {
          </div>
        </section>
        <section>
-         <h2 className="text-4xl font-semibold py-8">Live Anywhere</h2>
+         <h2 className="text-2xl font-semibold py-8 text-primary">Live Anywhere</h2>
          <div className="flex space-x-7 overflow-scroll scrollbar-hide p-3 -ml-3"> 
          {cardsData?.map((item) => (
            <MediumCard key={item.img} img={item.img} title={item.title} />

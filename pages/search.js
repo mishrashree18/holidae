@@ -18,9 +18,9 @@ export default function Search({ searchResults }) {
             <Header placeholder={`${location} | ${range} | ${noOfGuests} guests`}/>
             <main className="flex">
                 <section className="flex-grow pt-8 px-6">
-                    <p className="text-xs p-2">5000+ Stay - {range} - for {noOfGuests} guests</p>
-                <h1 className="text-3xl font-semibold mt-2 mb-6 p-2">Stays in {location}</h1>
-                <div className="hidden lg:inline-flex mb-5 ml-5 space-x-3 text-gray-800 whitespace-nowrap">
+                    <p className="text-xs p-2 text-primary">5000+ Stay - {range} - for {noOfGuests} guests</p>
+                <h1 className="text-3xl text-primary font-semibold mt-2 mb-6 p-2">Stays in {location}</h1>
+                <div className="hidden lg:inline-flex mb-5 ml-5 space-x-3 text-primary whitespace-nowrap">
                     <p className="button">Cancellation Flexibility</p>
                     <p className="button">Type of place</p>
                     <p className="button">Price</p>
